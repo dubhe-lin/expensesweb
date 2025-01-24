@@ -30,14 +30,14 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center gap-2" href="#">
-            <svg class="bi"><use xlink:href="#file-earmark" /></svg>
+          <a class="nav-link d-flex align-items-center gap-2" href="{% url 'expenses' %}">
+            <svg class="bi"><use xlink:href="#cart" /></svg>
             Expenses
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link d-flex align-items-center gap-2" href="#">
-            <svg class="bi"><use xlink:href="#cart" /></svg>
+            <i class="bi bi-piggy-bank"></i>
             Incomes
           </a>
         </li>
@@ -55,7 +55,7 @@
         <li class="nav-item">
           <a class="nav-link d-flex align-items-center gap-2" href="#">
             <svg class="bi">
-              <use xlink:href="#file-earmark-text" />
+              <use xlink:href="#graph-up" />
             </svg>
             Expenses Summary
           </a>
@@ -63,7 +63,7 @@
         <li class="nav-item">
           <a class="nav-link d-flex align-items-center gap-2" href="#">
             <svg class="bi">
-              <use xlink:href="#file-earmark-text" />
+              <use xlink:href="#graph-up" />
             </svg>
             Incomes Summary
           </a>
@@ -74,20 +74,46 @@
 
       <ul class="nav flex-column mb-auto">
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center gap-2" href="#">
+          <a class="nav-link d-flex align-items-center gap-2" href="">
             <svg class="bi">
               <use xlink:href="#gear-wide-connected" />
             </svg>
             Settings
           </a>
         </li>
+      </ul>
+
+      <ul class="nav flex-column mb-auto">
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center gap-2" href="#">
-            <svg class="bi"><use xlink:href="#door-closed" /></svg>
-            Sign out
+          <a class="nav-link d-flex align-items-center gap-2" href="{% url 'preferences' %}">
+            <svg class="bi">
+              <use xlink:href="#puzzle" />
+            </svg>
+            General
           </a>
         </li>
       </ul>
+
+      <ul class="nav flex-column mb-auto">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center gap-2" href="">
+            <svg class="bi">
+              <use xlink:href="#people" />
+            </svg>
+            Account
+          </a>
+        </li>
+        <li class="nav-item">
+          <form action='{% url 'logout' %}' method='POST'>
+            {% csrf_token %}
+            <a class="nav-link d-flex align-items-center gap-2" href="#">
+              <svg class="bi"><use xlink:href="#door-closed" /></svg>
+              <input type="submit" value="Sign Out" class="text text-capitalize" style="border:none; background-color:transparent; padding-left:0"/>
+            </a>
+          </form>
+        </li>
+      </ul>
+
     </div>
   </div>
 </div>

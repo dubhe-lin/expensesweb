@@ -531,7 +531,7 @@ legend + * {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
-::-webkit-search-decoration {
+::-webkit-stationery-decoration {
   -webkit-appearance: none;
 }
 ::-webkit-color-swatch-wrapper {

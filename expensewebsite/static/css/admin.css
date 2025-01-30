@@ -1,0 +1,43 @@
+#header {
+  padding: 20px 40px;
+  background: rgb(0, 62, 69);
+  color: #fff;
+  overflow: hidden;
+}
+#head img {
+  width: 2rem;
+  height: 2rem;
+}
+#branding h1 {
+  color: #fff;
+}
+div.breadcrumbs {
+  background: rgb(61, 88, 106);
+  padding: 10px 40px;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+}
+.submit-row {
+  padding-top: 30px !important;
+}
+
+input[type="submit"],
+input[type="button"],
+.submit-row input {
+  width: 100%;
+  background: rgb(0, 62, 69);
+}
+
+.module h2,
+.module caption,
+.inline-group h2 {
+  background: rgb(0, 62, 69);
+}
+
+@media (max-width: 1000px) {
+  header#header {
+    padding: 40px;
+  }
+}

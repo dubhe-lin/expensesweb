@@ -39,6 +39,10 @@
           </div>
           <input type="submit" value="Login" class="btn w-100 btn-primary submit-btn" />
         </form>
+        <div class="container">
+        <span class='text-lead lead'>Don't have an acount? </span><a href="{% url 'register' %}">Register</a><br/>
+        <span class='text-lead lead'>Forgot Password? </span><a href="{% url 'request-password' %}">Reset</a>
+        </div>
       </div>
       </div>
     </div>

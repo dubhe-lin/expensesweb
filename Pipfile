@@ -10,6 +10,8 @@ python-dotenv = "*"
 waitress = "*"
 email-validator = "*"
 six = "*"
+xlwt = "*"
+reportlab = "*"
 
 [dev-packages]
 
